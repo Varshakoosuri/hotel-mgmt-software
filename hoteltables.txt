@@ -1,0 +1,17 @@
+create table users(userid MEDIUMINT NOT NULL AUTO_INCREMENT,username varchar(30),password varchar(30),mailid varchar(30),mobile int,place varchar(30),PRIMARY KEY(userid));
+
+create table tenants(userid MEDIUMINT NOT NULL AUTO_INCREMENT,roomnumber int,tenantname varchar(30),room_type varchar(20),aminity varchar(10),booked_date varchar(30),left_date varchar(30),amount_paid int,PRIMARY KEY(userid));
+
+create table suprabat_rooms(roomnumber int primary key,roomtype varchar(30),aminity varchar(30),cost int,booked char(5));
+
+
+insert into suprabat_rooms values(101,"single bed room","AC",1500,'no');
+insert into suprabat_rooms values(102,"single bed room","NON AC",1000,'no');
+insert into suprabat_rooms values(103,"double bed room","AC",2500,'no');
+insert into suprabat_rooms values(104,"double bed room","NON AC",2000,'no');
+insert into suprabat_rooms values(105,"single bed room","AC",1500,'no');
+insert into suprabat_rooms values(106,"single bed room","NON AC",1000,'no');
+insert into suprabat_rooms values(107,"double bed room","AC",2500,'no');
+insert into suprabat_rooms values(108,"double bed room","NON AC",2000,'no');
+insert into suprabat_rooms values(109,"double bed room","AC",2500,'no');
+insert into suprabat_rooms values(110,"double bed room","NON AC",2000,'no');
